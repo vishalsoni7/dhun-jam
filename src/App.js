@@ -1,6 +1,3 @@
-import { useContext } from "react";
-import { UserContext } from "./component/Context";
-
 import { Route, Routes } from "react-router-dom";
 
 import { Dashboard } from "./pages/Dashboard";

@@ -8,8 +8,6 @@ import {
   fetchUserDetails,
   save_toast,
   save_toast_error,
-  checkInputValues,
-  verifyValues,
 } from "../component/utils";
 
 export const Dashboard = () => {
