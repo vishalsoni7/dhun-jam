@@ -34,9 +34,7 @@ export const Dashboard = () => {
     e.preventDefault();
 
     try {
-      console.log("updating");
       await updateHandle(data.id, input, setData, setInput);
-      console.log("fetching");
       await fetchUserDetails(user?.data?.id, user?.data?.token, setData);
       save_toast();
     } catch (error) {
