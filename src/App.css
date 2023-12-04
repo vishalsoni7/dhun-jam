@@ -1,38 +1,173 @@
 .App {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #030303;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-center-div h1 {
+  font-size: 32px;
+}
+
+.signin-input {
+  background-color: #030303;
+  border: 1px solid #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  outline: none;
+  width: -webkit-fill-available;
+}
+
+.signin-input::placeholder {
+  color: gray;
+}
+
+.signin-btn {
+  margin-top: 2rem;
+  width: -webkit-fill-available;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600px;
+  font-size: 16px;
+  color: #ffffff;
+  justify-content: centre;
+  cursor: pointer;
+  background-color: rgb(98, 67, 209);
+}
+
+.dashboard-content-div {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-input-a {
+  outline: none;
+  background-color: #030303;
+  border: 0.5px solid #ffffff;
+  padding: 0.6rem;
+  border-radius: 12px;
+  margin: 0.2rem 0;
+  color: #ffffff;
+  width: 4rem;
+  margin: 0rem 0.5rem;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+.dashboard-input-b {
+  outline: none;
+  background-color: #030303;
+  border: 0.5px solid #ffffff;
+  padding: 0.6rem;
+  border-radius: 12px;
+  margin: 0.2rem 0;
+  color: #ffffff;
+  width: 4rem;
+  margin: 0rem 0.5rem;
+  text-align: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: max-content;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  width: max-content;
+}
+
+.radio {
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-evenly;
+}
+
+.grey_out-a {
+  outline: none;
+  background-color: #818589;
+  border: 0.5px solid #ffffff;
+  padding: 0.6rem;
+  border-radius: 12px;
+  margin: 0.2rem 0;
+  color: #252525;
+  width: 4rem;
+  margin: 0rem 0.5rem;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+.grey_out-b {
+  outline: none;
+  background-color: #818589;
+  border: 1px solid gray;
+  padding: 0.6rem;
+  border-radius: 12px;
+  margin: 0.2rem 0;
+  color: #252525;
+  width: 4rem;
+  margin: 0rem 0.5rem;
+  text-align: center;
+}
+
+.save-button-div {
+  margin: 0 25rem;
+}
+
+.save-button {
+  margin-top: 2rem;
+  width: -webkit-fill-available;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600px;
+  font-size: 16px;
+  color: #ffffff;
+  justify-content: centre;
+  cursor: pointer;
+  background-color: rgb(98, 67, 209);
+}
+
+.save-button-gray-out {
+  margin-top: 2rem;
+  width: -webkit-fill-available;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600px;
+  font-size: 16px;
+  color: #ffffff;
+  justify-content: centre;
+  cursor: pointer;
+  background-color: #818589;
 }
