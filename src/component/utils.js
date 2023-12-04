@@ -103,7 +103,6 @@ export const signin = async (username, password, setUser, navigate) => {
 
       if (res.status === 200) {
         setUser(res?.data);
-        // localStorage.setItem("userData", JSON.stringify(res?.data));
         login_toast();
         navigate("/admin");
       } else {

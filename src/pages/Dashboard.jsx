@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { UserContext } from "../component/Context";
 
 import { Chart } from "./Chart";
@@ -13,13 +13,7 @@ import {
 } from "../component/utils";
 
 export const Dashboard = () => {
-  const { data, setData } = useContext(UserContext);
-
-  const credentialsFromLoacal = JSON.parse(localStorage.getItem("userData"));
-
-  const {
-    data: { id, token },
-  } = credentialsFromLoacal;
+  const { data, setData, user } = useContext(UserContext);
 
   const [input, setInput] = useState({
     charge_customers: false,
@@ -45,7 +39,7 @@ export const Dashboard = () => {
       console.log("updating");
       await updateHandle(data.id, input, setData, setInput);
       console.log("fetching");
-      await fetchUserDetails(id, token, setData);
+      await fetchUserDetails(user?.data?.id, user?.data?.token, setData);
       save_toast();
     } catch (error) {
       console.error(error);
